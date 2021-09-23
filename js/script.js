@@ -2,13 +2,21 @@
 // Jamila Alsadik
 
 $("document").ready(function(){
-    $("#vprospect").click(function(){
-        var xhttp= new XMLHttpRequest();
-        xhttp.onload=function(){
-            $("div#solution").Html(this.responseText);
-        }
-        xhttp.open("GET","prospect.html");
-        xhttp.send();
+    $("a#vprospect").click(function(){
+        $("#solution").hide();
+        console.log("is click working?");
+        $("#solution").load("prospect.html").slideDown("slow");
 
     });
-})
+    $("a#vconvert").click(function(){
+        $("#solution").hide();
+        console.log("is click working?");
+        $("#solution").load("convert.html").slideDown("slow");
+
+    });
+    $("a#vretain").click(function(){
+        $("#solution").hide();
+        console.log("is click working?");
+        $("#solution").load("retain.html").slideDown("slow");
+    });
+});
