@@ -1,7 +1,7 @@
 // WEB303 Assignment 2
 // Jamila Alsadik
 
-$("document").ready(function(){
+$(document).ready(function(){
     $("a#vprospect").click(function(){
         $("#solution").hide();
         console.log("is click working?");
