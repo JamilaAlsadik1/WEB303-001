@@ -4,7 +4,12 @@
 */
 
 $(document).ready(function(){
-    // your code here
+   navigator.geolocation.getCurrentPosition((position)=>{
+       $("#youarehere").eq(0).html("the current location is : latitude "+position.coords.latitude + " / longtiude "+position.coords.longitude )
+   },
+       function (){
+           $("#youarehere").html("Can't use geolocation!!");
+       });
 
 
 

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="581b81e3-2541-4cfb-ae2a-8c482c0d3b2a" name="Changes" comment="" />
+    <list default="true" id="a1f9bf6a-94ce-4f75-8a4c-c33a4aa7abd7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +16,24 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="ProjectId" id="1ynXwjOtMQ7Sj8IkcyRFfyfMeAQ" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zBAlehpTVqnlQHl79PuLmF7jRW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -31,14 +43,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="581b81e3-2541-4cfb-ae2a-8c482c0d3b2a" name="Changes" comment="" />
-      <created>1632888566490</created>
+      <changelist id="a1f9bf6a-94ce-4f75-8a4c-c33a4aa7abd7" name="Changes" comment="" />
+      <created>1633611261398</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1632888566490</updated>
-      <workItem from="1632888569028" duration="2841000" />
-      <workItem from="1633026004816" duration="3563000" />
-      <workItem from="1633395264376" duration="118000" />
+      <updated>1633611261398</updated>
+      <workItem from="1633611263605" duration="1733000" />
     </task>
     <servers />
   </component>
