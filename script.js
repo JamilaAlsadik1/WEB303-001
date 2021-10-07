@@ -4,12 +4,34 @@
 */
 
 $(document).ready(function(){
+    isstorageAvailable();
+    isGeoLocationAvailable();
    navigator.geolocation.getCurrentPosition((position)=>{
-       $("#youarehere").eq(0).html("the current location is : latitude "+position.coords.latitude + " / longtiude "+position.coords.longitude )
+       let lat2=position.coords.latitude;
+       let lon2=position.coords.longitude;
+       $("#youarehere").html("the current location is : latitude "+position.coords.latitude + " / longitude "+position.coords.longitude +"<br>")
+
+       if(localStorage.getItem("latitude")==null&& localStorage.getItem("longitude")==null){
+        $("#youarehere").html("<h3>welcome to our wibsite</h3> ");
+          localStorage.setItem("latitude",position.coords.latitude);
+          localStorage.setItem("longitude",position.coords.longitude);
+       }
+       else{
+        $("h3").css("display","none");
+
+       }
+           var lat1=localStorage.getItem("latitude");
+           var lon1=localStorage.getItem("longitude");
+
+       console.log(lat1,lon1,lat2,lon2);
+       $("#youarehere").append("you moved away "+calcDistance(lat1,lon1,lat2,lon2));
+
    },
        function (){
            $("#youarehere").html("Can't use geolocation!!");
-       });
+       },{
+        enableHighAccuracy: true
+    });
 
 
 
@@ -35,5 +57,21 @@ $(document).ready(function(){
         return ( R * c );
     }
 });
+function isstorageAvailable(){
+    if (typeof localStorage == 'undefined'){
+        alert("localStorage is not available");}
+        else{
+            console.log("localstorage is available");
+        }
+    }
+
+function isGeoLocationAvailable(){
+    if (typeof navigator.geolocation == 'undefined'){
+        alert("geolocation is not available");
+    }
+    else{
+        console.log("geolacation is available")
+    }
+}
 
 
