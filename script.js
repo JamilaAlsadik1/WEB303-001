@@ -1,6 +1,6 @@
 /*
     Assignment 4
-    {Your name here}
+    Jamila Alsadik
 */
 
 $(document).ready(function(){
