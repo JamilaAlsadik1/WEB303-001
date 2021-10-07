@@ -13,18 +13,21 @@ $(document).ready(function(){
 
        if(localStorage.getItem("latitude")==null&& localStorage.getItem("longitude")==null){
         $("#youarehere").html("<h3>welcome to our wibsite</h3> ");
-          localStorage.setItem("latitude",position.coords.latitude);
-          localStorage.setItem("longitude",position.coords.longitude);
+
        }
        else{
         $("h3").css("display","none");
-
-       }
            var lat1=localStorage.getItem("latitude");
            var lon1=localStorage.getItem("longitude");
+           $("#youarehere").append("you moved away "+calcDistance(lat1,lon1,lat2,lon2));
+
+       }
+
+           localStorage.setItem("latitude",lat2);
+           localStorage.setItem("longitude",lon2);
 
        console.log(lat1,lon1,lat2,lon2);
-       $("#youarehere").append("you moved away "+calcDistance(lat1,lon1,lat2,lon2));
+
 
    },
        function (){
